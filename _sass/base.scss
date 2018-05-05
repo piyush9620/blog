@@ -25,7 +25,7 @@ $text-color: #222222;
 /*- Base settings -*/
 
 html {
-	background-color: $background-color;
+	//background-color: $background-color;
 	font-size: 16px;
 	@media (min-width: 940px) {
 		font-size: 18px;
@@ -35,6 +35,19 @@ html {
 	font-family: "Times New Roman", Times, serif;
 }
 
+.bg {
+  /* The image used */
+  background-image: url("{{ '/' | prepend: site.baseurl}}"+"/img/intro-bg.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  //background="{{ '/' | prepend: site.baseurl}}/img/img-test.png"
+}
 
 /*- Link -*/
 a {
